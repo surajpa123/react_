@@ -15,6 +15,9 @@ const RestaurantCard = ({
     costForTwoString,
     avgRating,
 }) => {
+
+
+
   return (
    <>
    <div className='card'>
@@ -23,11 +26,11 @@ const RestaurantCard = ({
 
 <div style={{padding:"30px", height:"150px"}}>
 
-<h2>{name}</h2>
+<h2>{name}  </h2>
 
-<h5>{cuisines}</h5>
+<h5>{cuisines+ " , "}</h5>
 
-<h6>{area}</h6>
+<h6>{area} </h6>
 
 <span>
 
@@ -37,9 +40,9 @@ const RestaurantCard = ({
     {avgRating}
 </h4>
 
-<h4>{lastMileTravelString}</h4>
+<h4>{lastMileTravelString ?? '2.0 km'}</h4>
 
-<h4>{costForTwoString}</h4>
+<h4>{costForTwoString ?? "200 for two"}</h4>
 
 </span>
 

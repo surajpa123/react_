@@ -5,16 +5,20 @@ import Body from './components/Body';
 import Footer from './components/Footer';
 import RestaurantCard from './components/RestaurantCard';
 import Header from './components/Header';
+import {Route,Routes} from "react-router-dom";
+import AllRoutes from './components/Rountes';
 
 function App() {
   return (
     <div className="App">
 
-<Header/>
+
+{/* <Header/>
 <Body/>
 <Footer/>
-<RestaurantCard/>
-
+<RestaurantCard/> */}
+<Header/>
+<AllRoutes/>
 
     </div>
   );
